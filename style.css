@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    background: white;     
+}
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+.logo {
+display: flex;
+align-items: center;
+
+svg{
+    width: 100px;
+    fill: azure;
+}
+
+.link-principal {
+    font: 400 14px 'roboto', sans-serif;
+    color: azure;
+    letter-spacing: 2px;
+    &::before {
+     content: '|';
+     padding: 16px;
+    }
+}
+}
+.menu-lista {
+    display: flex;
+
+    .menu-item{
+      h3, a {
+        display: block;
+        cursor:pointer;
+        padding: 0 15px;
+        font: 400 14px 'roboto', sans-serif;
+        color: azure;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 52px;
+        &:hover {
+            background-color: red;
+        }
+      }
+      .item-lupa svg {
+        fill: azure;
+        display: block;
+        padding: 18px 0;
+        height: 16px;
+        width: 16px;
+      }
+      .item-carrinho svg{
+        fill: azure;
+        display: block;
+        padding: 15px 0;
+        height: 22px;
+        width: 22px;
+      }
+    
+    }
+   
+}
+.submenu {
+    display: none;
+    background-color: aliceblue;
+    padding: 60px 100px 100px;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    left: 0;
+
+    &.mostrar {
+        display: flex;
+    }
+    div {
+        flex: 1;
+        margin: 0 12px;
+        a{
+        display: block;
+        cursor:pointer;
+        padding: 0 15px;
+        font: 500 14px 'roboto', sans-serif;
+        color: rgb(61, 58, 58);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 34px;
+        }
+    .submenu-titulo{
+        cursor:pointer;
+        padding: 0 15px;
+        font: 500 14px 'roboto', sans-serif;
+        color: rgb(0, 0, 0);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 52px;
+        border-bottom: 5px solid ; color: rgb(5, 5, 5);
+        padding-bottom: 18px;
+        margin-bottom: 30px;
+    }
+    }
+    .submenu-destque {
+        flex: 2;
+        img {
+        width: 100%;
+    
+        }
+        h4 {
+ margin-top: 24px;
+ text-align: center;
+ cursor:pointer;
+ padding: 0 15px;
+ font: 500 14px 'roboto', sans-serif;
+ color: rgb(22, 22, 22);
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ line-height: 34px;
+        }
+    }
+}
+
+.conteudo {
+    .linha {
+        width: 100%;
+        display: flex;
+    .coluna{
+        padding: 12px 0 0;
+        flex: 1;
+
+        + .coluna{
+            padding-left: 24px;
+        }
+       }
+    }
+
+ .conteudo-area{
+  display: block;
+  position: relative;
+
+  + .conteudo-area{
+    margin-top: 16px;
+  }
+  img{
+    display: block;
+    width: 100%;
+  }
+
+  h3{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    line-height: 40px;
+    margin-top: -20px;
+    text-align: center;
+    display: block;
+    cursor:pointer;
+    padding: 0 15px;
+    font: 500 15px 'roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 52px;
+  }
+
+  &.conteudo-texto-claro{
+    h3 {
+        color: azure;
+    }
+  }
+  &.conteudo-topo {
+   h3 {
+    top: 20%;
+    margin-top: 0;
+   }
+  }
+  &.conteudo-esquerda {
+     h3{
+        left: 15%;
+        text-align: left;
+     }
+  }
+  &.conteudo-direita{
+    h3{
+        right: 15%;
+        text-align: right;
+    }
+  }
+
+  &:hover{
+    img {
+        transition: all 0.25s linear;
+        box-shadow: 1px 1px 4px; color: rgb(174, 189, 203);
+    }
+  }
+ }
+}
+ 
+footer{
+    padding: 27px 0;
+    nav {
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                padding: 8px 16px 8px 0px;
+                a {
+                    display: block;
+                    cursor:pointer;
+                    padding: 0 15px;
+                    font: 500 14px 'roboto', sans-serif;
+                    color: rgb(88, 85, 85);
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    line-height: 52px;
+                   &:hover {
+                    color: rgb(0, 0, 0);
+                   }
+                }
+            }
+        }
+    }
+}
+
